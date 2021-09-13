@@ -1,17 +1,24 @@
+body {
+  display: grid;
+  grid-template-areas: 'ad1 game ad2';
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  width: 100%;
+}
+
+.malware, .wadbot {
+  width: 95%;
+}
 
 .malware {
-  position: relative;
-  left: 30px;
-  border: 3px solid #73AD21;
+  grid-area: ad1;
 }
 
+canvas {
+  grid-area: game;
+}
 
 .wadbot {
-  position: relative;
-  right: 30px;
-  border: 3px solid #73AD21;
-}
-  
-.grid-container {
-  display: grid;
+  grid-area: ad2;
 }
