@@ -1,10 +1,10 @@
 body {
-  display: grid;
-  grid-template-areas: 'ad1 truth ad2';
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 1fr;
-  place-items: center;
-  width: 100%;
+    display: grid;
+    grid-template-areas: 'ad1 truth ad2';
+    grid-template-columns: 1fr 45ch 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    width: 100%;
 }
 
 
@@ -13,7 +13,7 @@ body {
     height: 100%;
     width: 75%;
     object-fit: fill;
-  }
+}
 
 
 .y {
@@ -21,9 +21,11 @@ body {
     height: 100%;
     width: 75%;
     object-fit: fill;
-  }
-
-canvas {
-  grid-area: truth;
-  
 }
+
+.fax {
+    grid-area: truth;
+    position: relative;
+}
+
+
