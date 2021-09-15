@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-areas: 'ad1 game ad2';
+  grid-template-areas: 'ad1 truth ad2';
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 1fr;
   place-items: center;
@@ -9,10 +9,21 @@ body {
 
 
 .x {
-  grid-area: ad1, ad2;
-  height: 100%;
-}
+    grid-area: ad1;
+    height: 100%;
+    width: 75%;
+    object-fit: fill;
+  }
+
+
+.y {
+    grid-area: ad2;
+    height: 100%;
+    width: 75%;
+    object-fit: fill;
+  }
 
 canvas {
-  grid-area: game;
+  grid-area: truth;
+  
 }
