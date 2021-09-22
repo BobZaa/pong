@@ -1,8 +1,16 @@
-window.onload; choosePic
+window.onload = choosePics;
 
-    var myPictures = new Array("images/reklam.png")("images/PEHOAGPS_BEST_AD_EUNE.png"); 
+const myPictures = ["reklam.png", "PEHOAGPS_BEST_AD_EUNE.png", "BETTER_AD.jpg"]; 
+    
+function choosePics(){
+    let randomNum = Math.floor(Math.random() * myPictures.length);
 
-function choosePic(){
-    var randomNum = Math.floor(Math.random() * myPictures.length);
+    const malware = document.querySelector(".malware");    
+    malware.src = myPictures[randomNum];
+
+    randomNum = Math.floor(Math.random() * myPictures.length);
+    const wadbot = document.querySelector(".wadbot");    
+    wadbot.src = myPictures[randomNum];
 }
+    
     

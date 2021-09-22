@@ -38,6 +38,6 @@ function gameLogic() {
     )
     {
         gameData.ball.s.y *= -1.01
-        gameData.ball.s.x *= 1.01
+        gameData.ball.s.x *= 1.01   
     }
 }
