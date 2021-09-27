@@ -7,7 +7,7 @@ function gameLogic() {
 
 
 
-    gameData.ball.x += gameData.ball.s.x
+    gameData.ba7ll.x += gameData.ball.s.x
     gameData.ball.y += gameData.ball.s.y
 
 
